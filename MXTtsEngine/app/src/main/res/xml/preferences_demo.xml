@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings" >
+
+    <!-- 单独一个复选框 -->
+    <PreferenceCategory android:title="我是CheckBox" >
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:summary="是否勾选复选框"
+            android:title="我是复选框" />
+    </PreferenceCategory>
+
+    <!-- 单独一个Switch开关 -->
+    <PreferenceCategory android:title="我是Switch" >
+        <SwitchPreference
+            android:key="switch_preference"
+            android:summary="是否打开我呢？"
+            android:summaryOff="关闭"
+            android:summaryOn="打开"
+            android:switchTextOff="开关被关闭了"
+            android:switchTextOn="开关被打开了"
+            android:title="开关" />
+    </PreferenceCategory>
+
+    <!-- 很多选项的综合 -->
+    <PreferenceCategory android:title="大综合" >
+        <EditTextPreference
+            android:dialogTitle="请输入你的名字"
+            android:key="edittext_preference"
+            android:summary="这是一个编辑框"
+            android:title="我是编辑框" />
+
+        <ListPreference
+            android:dialogTitle="请选择一项"
+            android:entries="@array/cities"
+            android:entryValues="@array/cities"
+            android:key="single_list_preference"
+            android:summary="这是一个单选列表"
+            android:title="我是单选框" />
+
+        <MultiSelectListPreference
+            android:dialogTitle="请选择一项"
+            android:entries="@array/cities"
+            android:entryValues="@array/cities"
+            android:key="multi_list_preference"
+            android:summary="这是一个多选列表"
+            android:title="我是多选框" />
+
+        <RingtonePreference
+            android:key="ringtone_preference"
+            android:ringtoneType="all"
+            android:showSilent="true"
+            android:summary="选择各种手机铃声"
+            android:title="铃声" />
+
+        <PreferenceScreen
+            android:summary="是否能打开页面"
+            android:title="打开页面" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.baidu.com" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <!-- 启动新的页面 -->
+    <PreferenceCategory android:title="启动新页面设置" >
+        <PreferenceScreen
+            android:summary="点我到达新的页面"
+            android:title="新开页面展示" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="select_me"
+                android:summaryOff="对不起，你没有勾选我"
+                android:summaryOn="是的，你勾选了我"
+                android:title="是否勾选了我？" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="like_android"
+                android:summaryOff="不不，我没太大兴趣"
+                android:summaryOn="是的，我特别喜欢"
+                android:title="是否喜欢Android呢？" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <!-- 调试onPreferenceTreeClick接口 -->
+    <PreferenceCategory android:title="联动设置" >
+        <CheckBoxPreference
+            android:key="select_linkage"
+            android:title="是否选择联动" />
+
+        <ListPreference
+            android:dialogTitle="请选择一个城市"
+            android:entries="@array/cities"
+            android:entryValues="@array/cities"
+            android:key="select_city"
+            android:summary="我是否能选择看联动设置"
+            android:title="是否能选择" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

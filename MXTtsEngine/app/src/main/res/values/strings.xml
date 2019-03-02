@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">抹香语音引擎1.0</string>
+
+    <string name="tts_speak">TTS  SPEAK</string>
+    <string name="tts_stop">TTS  STOP</string>
+    <string name="tts_save">TTS  SAVE</string>
+
+    <string name="tts_sample_en">One needs 3 things to be truly happy living in the world: some thing to do, some one to love, some thing to hope for.</string>
+    <string name="tts_sample_zh">香非在蕊，香非在萼，骨中香彻。</string>
+</resources>
