@@ -1,4 +1,4 @@
-package com.ishare.ttsengine;
+package com.ishare;
 
 import android.app.Application;
 import android.content.res.AssetManager;

@@ -12,7 +12,7 @@ import com.baidu.tts.client.SpeechError;
 import com.baidu.tts.client.SpeechSynthesizer;
 import com.baidu.tts.client.SpeechSynthesizerListener;
 import com.baidu.tts.client.TtsMode;
-import com.ishare.ttsengine.MoxiangApplication;
+import com.ishare.MoxiangApplication;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
