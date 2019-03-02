@@ -130,7 +130,7 @@ public class TestSpeechActivity extends AppCompatActivity {
                 } else {
                     String text="青青子衿 悠悠我心";
                     String filename = "tts.mp3";
-                    String destDir = "/sdcard/Documents/XunTts/output";
+                    String destDir = "/sdcard/Documents/MXTts/output";
                     File ttsFile = new File(destDir, filename);
                     // 3.调用synthesizeToFile
                     int state = textToSpeech.synthesizeToFile(text, null, ttsFile, Integer.toString(new Random().nextInt()));

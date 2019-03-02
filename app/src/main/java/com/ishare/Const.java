@@ -7,7 +7,7 @@ package com.ishare.ttsengine;
 public class Const {
 
     // file
-    public static final String MY_BASE_DIR = "XunTts"; //恢复成原来的文件夹名
+    public static final String MY_BASE_DIR = "MXTts"; //恢复成原来的文件夹名
     public static final String OFFLINE_VOICE_DIR = "offline";
     public static final String OUTPUT_DIR = "output";
 
